@@ -3,7 +3,7 @@ spring:
     name: gateway
   cloud:
     gateway:
-      actuator-enabled: true
+      # actuator-enabled: true
       routes:
         - id: user
           uri: lb://USER
