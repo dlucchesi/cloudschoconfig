@@ -1,16 +1,30 @@
 spring:
   application:
     name: gateway
+  # cloud:
+  #   gateway:
+  #     # actuator-enabled: true
+  #     routes:
+  #       - id: user
+  #         uri: lb://USER
+  #         predicates:
+  #           - Path=/api/user/**
+  #         # filters:
+  #         #   - AddRequestHeader=Hello, World
   cloud:
     gateway:
-      # actuator-enabled: true
-      routes:
-        - id: user
-          uri: lb://USER
-          predicates:
-            - Path=/api/user/**
-          # filters:
-          #   - AddRequestHeader=Hello, World
+      discovery:
+        locator:
+          enabled: true
+          # Optional: set to true to allow routing with lowercase service IDs
+          lowerCaseServiceId: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ # URL of the Eureka server
+    # Optional: set to false to prevent the gateway itself from registering in Eureka
+    # registerWithEureka: false 
 
 management:
   endpoints:
