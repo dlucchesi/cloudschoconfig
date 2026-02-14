@@ -6,16 +6,7 @@ spring:
       discovery:
         locator:
           enabled: true
-          # Optional: set to true to allow routing with lowercase service IDs
           lowerCaseServiceId: true
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/ 
-    fetchRegistry: true  
-    registerWithEureka: true 
-
 
 management:
   endpoints:
@@ -27,10 +18,18 @@ management:
       # access: read-only
       enabled: true # Explicitly enable the gateway endpoint (default is true)
 
-
 logging:
   level:
     org.springframework.web: DEBUG
 
 server:
   port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ 
+    fetchRegistry: true  
+    registerWithEureka: true 
+    instance:
+    prefer-ip-address: true
