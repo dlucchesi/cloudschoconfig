@@ -1,11 +1,12 @@
 spring:
   application:
     name: gateway
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: gateway, info, health
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway, info, health
 
   cloud:
     gateway:
