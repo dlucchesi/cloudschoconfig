@@ -6,7 +6,7 @@ spring:
     gateway:
       routes:
         - id: user_service
-          uri: host.docker.internal:user:8081
+          uri: lb://USER-SERVICE
           predicates:
             - Path=/api/user/**
           # filters:
