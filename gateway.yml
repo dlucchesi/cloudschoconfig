@@ -9,6 +9,7 @@ management:
         include: gateway, info, health
   endpoint:
     gateway:
+      access: read-only
       enabled: true # Explicitly enable the gateway endpoint (default is true)
 
   cloud:
