@@ -14,7 +14,7 @@ management:
   cloud:
     gateway:
       routes:
-        - id: user_service
+        - id: user
           uri: lb://USER
           predicates:
             - Path=/api/user/**
