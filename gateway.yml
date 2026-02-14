@@ -3,6 +3,13 @@ spring:
     name: gateway
   cloud:
     gateway:
+      server:
+        webflux:
+          routes:
+            - id: user
+              uri: lb://USER
+              predicates:
+                - Path=/api/user/**
       discovery:
         locator:
           enabled: true
