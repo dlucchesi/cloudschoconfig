@@ -16,3 +16,7 @@ spring:
             - Path=/api/user/**
           # filters:
           #   - AddRequestHeader=Hello, World
+
+logging:
+  level:
+    org.springframework.web: DEBUG
