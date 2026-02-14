@@ -6,10 +6,10 @@ management:
   endpoints:
     web:
       exposure:
-        include: gateway, info, health
+        include: health, info, gateway
   endpoint:
     gateway:
-      access: read-only
+      # access: read-only
       enabled: true # Explicitly enable the gateway endpoint (default is true)
 
   cloud:
