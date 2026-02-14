@@ -1,6 +1,16 @@
 spring:
   application:
     name: gateway
+  cloud:
+    gateway:
+      actuator-enabled: true
+      routes:
+        - id: user
+          uri: lb://USER
+          predicates:
+            - Path=/api/user/**
+          # filters:
+          #   - AddRequestHeader=Hello, World
 
 management:
   endpoints:
@@ -12,16 +22,6 @@ management:
       # access: read-only
       enabled: true # Explicitly enable the gateway endpoint (default is true)
 
-  cloud:
-    gateway:
-      actuator-enabled: true
-      routes:
-        - id: user
-          uri: lb://USER
-          predicates:
-            - Path=/api/user/**
-          # filters:
-          #   - AddRequestHeader=Hello, World
 
 logging:
   level:
