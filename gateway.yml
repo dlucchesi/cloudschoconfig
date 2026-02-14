@@ -8,6 +8,6 @@ spring:
         - id: user_service
           uri: host.docker.internal:user:8081
           predicates:
-            - Path=/user
+            - Path=/api/user
           # filters:
           #   - AddRequestHeader=Hello, World
