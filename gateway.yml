@@ -5,10 +5,7 @@ spring:
     endpoints:
       web:
         exposure:
-          include: gateway, info
-    endpoint:
-      info:
-        enabled: true
+          include: gateway, info, health
 
   cloud:
     gateway:
