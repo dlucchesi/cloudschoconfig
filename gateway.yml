@@ -12,9 +12,10 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/ # URL of the Eureka server
-    # Optional: set to false to prevent the gateway itself from registering in Eureka
-    # registerWithEureka: false 
+      defaultZone: http://localhost:8761/eureka/ 
+    fetchRegistry: true  
+    registerWithEureka: true 
+
 
 management:
   endpoints:
