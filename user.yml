@@ -27,6 +27,10 @@ eureka:
   instance:
     prefer-ip-address: true
 
+logging:
+  level:
+    com.dlucchesi.cloudschool.user: DEBUG
+
 cloudschool:
   user:
     nameMinLength: 10
