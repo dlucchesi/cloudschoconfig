@@ -9,7 +9,7 @@ spring:
             - id: user
               uri: lb://USER
               predicates:
-                - Path=/api/user/**
+                - Path=/api/user/**, /api/school/**
       discovery:
         locator:
           enabled: true
