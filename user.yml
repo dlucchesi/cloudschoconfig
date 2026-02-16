@@ -40,5 +40,5 @@ cloudschool:
     schoolMinLength: 8
     schoolMaxLength: 50
     cnpjValidRegex: ^[A-Z0-9]{12}$
-    initUserAdmin: admin
+    initUserAdmin: admin@cloudschool.com
 
