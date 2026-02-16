@@ -1,8 +1,8 @@
 spring:
   application:
-    name: user
+    name: school
   datasource:
-    url: jdbc:postgresql://localhost:5432/cs_user_db
+    url: jdbc:postgresql://localhost:5433/cs_school_db
     username: dbcsuser
     password: 654321
     driver-class-name: org.postgresql.Driver
@@ -32,9 +32,8 @@ logging:
     com.dlucchesi.cloudschool.user: DEBUG
 
 cloudschool:
-  user:
-    nameMinLength: 10
-    nameMaxLength: 100
-    passwordMinLength: 10
-    passwordValidRegex: ^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!]).*$}
-    initUserAdmin: admin@cloudschool.com
+  school:
+    schoolMinLength: 8
+    schoolMaxLength: 50
+    cnpjValidRegex: ^[A-Z0-9]{12}$
+
