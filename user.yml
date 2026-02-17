@@ -32,7 +32,11 @@ logging:
     com.dlucchesi.cloudschool.user: DEBUG
 
 cloudschool:
+  jwt:
+    secret: s3cr3tK3yForJWTsN33dsToBeV3ryL0ngAndS3cur3F0rHS512Alg0r1thmPl3as3Ch4ng3M3L4t3rDontUseInProd=
+    expiration-ms: 86400000
   user:
+    loginRedirect: /
     nameMinLength: 10
     nameMaxLength: 100
     passwordMinLength: 10
