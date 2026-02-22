@@ -10,6 +10,11 @@ spring:
               uri: lb://USER
               predicates:
                 - Path=/api/user/**
+            - id: school
+              uri: lb://SCHOOL
+              predicates:
+                - Path=/api/school/**
+
       discovery:
         locator:
           enabled: true
