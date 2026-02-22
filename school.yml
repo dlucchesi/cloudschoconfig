@@ -36,7 +36,7 @@ cloudschool:
     secret: s3cr3tK3yForJWTsN33dsToBeV3ryL0ngAndS3cur3F0rHS512Alg0r1thmPl3as3Ch4ng3M3L4t3rDontUseInProd=
     expiration-ms: 86400000
   school:
-    schoolMinLength: 8
-    schoolMaxLength: 50
+    nameMinLength: 8
+    nameMaxLength: 50
     cnpjValidRegex: ^[A-Z0-9]{12}$
-
+  loginRedirect: /
