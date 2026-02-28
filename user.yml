@@ -30,6 +30,8 @@ eureka:
 logging:
   level:
     com.dlucchesi.cloudschool.user: DEBUG
+    org.springframework.security.web.authentication: DEBUG
+
 
 cloudschool:
   security:
