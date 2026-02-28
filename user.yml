@@ -36,7 +36,7 @@ cloudschool:
     internal-api-key: s3cr3tK3yForJWTsN33dsToBeV3ryL0ngAndS3cur3F0rHS512Alg0r1thmPl3as3Ch4ng3M3L4t3r
   jwt:
     secret: s3cr3tK3yForJWTsN33dsToBeV3ryL0ngAndS3cur3F0rHS512Alg0r1thmPl3as3Ch4ng3M3L4t3rDontUseInProd=
-    expiration-ms: 86400000
+    expiration-ms: 3600000
   user:
     loginRedirect: /
     nameMinLength: 10
