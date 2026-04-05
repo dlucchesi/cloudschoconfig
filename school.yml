@@ -21,9 +21,9 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/ 
-    fetchRegistry: true  
-    registerWithEureka: true 
+      defaultZone: http://localhost:8761/eureka/
+    fetchRegistry: true
+    registerWithEureka: true
   instance:
     prefer-ip-address: true
 
@@ -40,5 +40,5 @@ cloudschool:
   school:
     nameMinLength: 8
     nameMaxLength: 50
-    cnpjValidRegex: ^[A-Z0-9]{12}$
+    cnpjValidRegex: ^[A-Z0-9]{14}$
   loginRedirect: /
