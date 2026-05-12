@@ -41,4 +41,7 @@ cloudschool:
     nameMinLength: 8
     nameMaxLength: 50
     cnpjValidRegex: ^[A-Z0-9]{14}
+    persona:
+      name: CloudSchool Test
+      cnpj: AA999999000101
   loginRedirect: /
