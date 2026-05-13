@@ -45,3 +45,6 @@ cloudschool:
       name: CloudSchool Test
       cnpj: AA999999000101
   loginRedirect: /
+  user:
+    url: http://localhost:8080
+    path: /api/user
