@@ -14,6 +14,7 @@ spring:
               uri: lb://SCHOOL
               predicates:
                 - Path=/api/school/**
+                - Path=/api/course/**
 
       discovery:
         locator:
