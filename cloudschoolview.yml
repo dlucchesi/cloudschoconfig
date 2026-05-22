@@ -1,4 +1,4 @@
 CS_API_URL: http://localhost:8080
 USER_API_PATH: /api/user
 SCHOOL_API_PATH: /api/school
-COURSE_API_PATH: /api/course
+COURSE_API_PATH: /api/school/course
